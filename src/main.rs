@@ -65,7 +65,7 @@ pub async fn request(api_key: &str, prompt: &str) -> String {
         function_call: None,
     }];
 
-    let chat_completion = ChatCompletion::builder("gpt-3.5-turbo", messages.clone())
+    let chat_completion = ChatCompletion::builder("gpt-4o", messages.clone())
         .create()
         .await
         .unwrap();
