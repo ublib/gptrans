@@ -40,7 +40,7 @@ fn main() {
 
 pub fn create_prompt(content: &str, i: Lang, o: Lang) -> String {
     format!(
-        "あなたは通訳者です。{}で与えられたマークダウンの内容を{}のマークダウンに翻訳してください。ただし、内容は勝手に改変しないでください。\n\n{}",
+        "あなたは通訳者です。{}で与えられたマークダウンの内容を{}のマークダウンに翻訳してください。ただし、内容や言葉の言い回しは勝手に改変しないでください。\n\n{}",
         lang_to_prompt(i),
         lang_to_prompt(o),
         content
